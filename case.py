@@ -1,3 +1,6 @@
+import sys
+sys.path.append("..")
+
 from app.binance_api_backtester.engine import BinanceApiBacktestingEngine
 from app.cta_strategy.strategies.double_ma_strategy import (
     DoubleMaStrategy,
@@ -5,8 +8,10 @@ from app.cta_strategy.strategies.double_ma_strategy import (
 from datetime import datetime
 
 
+# sys.path.append('/Users/hector/PycharmProjects/vnpy')
+
 def main():
-    print(123)
+    print(sys.path)
     # engine = BinanceApiBacktestingEngine()
     # engine.set_parameters(
     #     vt_symbol="BTCUSDT.BINANCE",
